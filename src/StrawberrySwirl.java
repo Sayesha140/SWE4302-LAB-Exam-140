@@ -1,7 +1,7 @@
 public class StrawberrySwirl extends Flavor{
 
     public StrawberrySwirl(int noOfScoops,double basePrice){
-        super(noOfScoops,basePrice);
+        super(basePrice);
     }
 
     @Override

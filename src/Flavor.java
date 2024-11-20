@@ -1,10 +1,10 @@
 public abstract class Flavor {
 
-    private int noOfScoops;
+
     private double basePrice;
 
-    public Flavor(int noOfScoops,double basePrice){
-        this.noOfScoops=noOfScoops;
+    public Flavor(double basePrice){
+
         this.basePrice=basePrice;
     }
 
@@ -16,9 +16,6 @@ public abstract class Flavor {
         this.basePrice = basePrice;
     }
 
-    public int getNoOfScoops() {
-        return noOfScoops;
-    }
 
     public abstract double calculatePricePerFlavour();
 }

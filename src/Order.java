@@ -1,24 +1,28 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Order {
-    List<Flavor>flavors;
+
+    Map<Integer,Flavor>flavors;
     List<Topping>toppings;
 
-    public Order(List<Flavor>flavors,List<Topping>toppings){
-        this.flavors=new ArrayList<>();
+    public Order(){
+
+        flavors=new HashMap<>();
         this.toppings=new ArrayList<>();
     }
 
-    public void addFlavors(Flavor flavor){
-        flavors.add(flavor);
+    public void addFlavors(Flavor flavor,int noOfScoops){
+        flavors.put(noOfScoops,Flavor) ;
     }
 
     public void addToppings(Topping topping){
         toppings.add(topping);
     }
 
-    public double calculateFlavorPrice(){
+   /* public double calculateFlavorPrice(){
         double total=0;
 
         for(Flavor flavor:flavors){
@@ -26,7 +30,7 @@ public class Order {
         }
         return total;
     }
-
+*/
     public double calculateToppingTotal(){
         double total=0;
 

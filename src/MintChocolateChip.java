@@ -1,7 +1,7 @@
 public class MintChocolateChip extends Flavor{
 
-    public MintChocolateChip(int noOfScoops,double basePrice){
-        super(noOfScoops,basePrice);
+    public MintChocolateChip(double basePrice){
+        super(basePrice);
     }
 
     @Override

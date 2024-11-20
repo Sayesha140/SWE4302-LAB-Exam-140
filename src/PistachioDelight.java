@@ -1,7 +1,7 @@
 public class PistachioDelight extends Flavor{
 
-    public PistachioDelight(int noOfScoops,double basePrice){
-        super(noOfScoops,basePrice);
+    public PistachioDelight(double basePrice){
+        super(basePrice);
     }
 
     @Override

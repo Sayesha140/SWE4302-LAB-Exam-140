@@ -17,4 +17,22 @@ public class Order {
     public void addToppings(Topping topping){
         toppings.add(topping);
     }
+
+    public double calculateFlavorPrice(){
+        double total=0;
+
+        for(Flavor flavor:flavors){
+            total+=flavor.calculatePricePerFlavour();
+        }
+        return total;
+    }
+
+    public double calculateToppingTotal(){
+        double total=0;
+
+        for(Topping topping:toppings){
+            total+=topping.calculateToppingPrice();
+        }
+        return total;
+    }
 }

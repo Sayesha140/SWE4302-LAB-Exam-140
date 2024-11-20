@@ -20,5 +20,5 @@ public abstract class Flavor {
         return noOfScoops;
     }
 
-    public abstract double calculatePricePerFlavour(int noOfScoops);
+    public abstract double calculatePricePerFlavour();
 }

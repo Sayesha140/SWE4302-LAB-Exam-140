@@ -10,7 +10,7 @@ public class StrawberrySwirl extends Flavor{
     }
 
     @Override
-    public double calculatePricePerFlavour(int noOfScoops) {
-        return noOfScoops*getBasePrice();
+    public double calculatePricePerFlavour() {
+        return getBasePrice();
     }
 }

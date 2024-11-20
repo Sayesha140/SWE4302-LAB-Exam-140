@@ -1,0 +1,7 @@
+class inventorySystem:
+Large Class, The class is handling too many responsibilities.
+41-63,conditional complexity,add product method has too many if else statements
+77-99,switch statements, calculate final price method has use of switch statements
+74-98,magic numbers, calculateFinalPrice method is using random numbers instead of named constants.
+      shotgun surgery, the class has many other classes inside it and doesnt depend on abstraction. changes in one place will have impact in other places.
+41,long parameter list, addProduct method has too many parameters
